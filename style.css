@@ -34,3 +34,20 @@ body{
 .preview-container>img{
     max-width: 100%;
 }
+.github-fork{
+    text-align: center;
+}
+.github-fork span{
+    display: none;
+}
+@media (max-width: 768px) {
+    .github-fork img{
+        display: none;
+    }
+    .github-fork span{
+        margin-top: 20px;
+        display: inline-block;
+        color: #bbb;
+        font-weight: lighter;
+    }
+}
