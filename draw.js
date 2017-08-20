@@ -7,6 +7,12 @@ function initInput() {
         var text = '请输入第' + (i + 1) + '行字'
         input.setAttribute('placeholder', text)
         dataArr[i] = text
+        input.onchange = function(index, target) {
+            return function() {
+                dataArr[index] = target.value
+                renderCanvas(dataArr)
+            }
+        }(i, input)
         input.onkeyup = function(index, target) {
             return function() {
                 dataArr[index] = target.value
