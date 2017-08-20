@@ -1,0 +1,36 @@
+body,html{
+    border: 0;
+    margin: 0;
+}
+body{
+    font-size: 16px;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.input-container{
+    width: 400px;
+    margin-bottom: 20px;
+}
+.input-container input{
+    width: 46%;
+    padding: 10px;
+    margin: 5px 2%;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #fe017c;
+    outline: none;
+}
+.preview-container{
+    text-align: center;
+    flex-grow: 1;
+}
+.preview-container>img{
+    max-width: 100%;
+}
